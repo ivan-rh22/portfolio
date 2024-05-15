@@ -12,7 +12,7 @@ export default function About() {
         animate = {{ opacity: 1, y: 0 }}
         transition = {{ delay: 0.175 }}
     >
-        <SectionHeading> About Me </SectionHeading>
+        <SectionHeading> About me </SectionHeading>
         <p className="mb-3">
             After graduating with a degree in{" "}
             <span className="font-medium">Computer Science</span>, I decided to pursue my
