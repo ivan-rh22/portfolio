@@ -39,7 +39,7 @@ export const links = [
       description:
         "My personal portfolio website.",
       tags: ["Next.js", "Tailwind", "Framer", "TypeScript"],
-      gitUrl: '',
+      gitUrl: 'https://github.com/ivan-rh22/portfolio',
       imageUrl: portfolioImg,
     },
     {
@@ -48,7 +48,7 @@ export const links = [
       description:
         "Started this project with a professor to help improve attendance tracking. Will soon be released on the App Store and Google Play Store.",
       tags: ["Flutter", "Dart", "Firebase", "Google Maps API"],
-      gitUrl: '',
+      gitUrl: 'https://github.com/senior-group/attendance-app',
       imageUrl: attendanceImg,
     },
   ] as const;

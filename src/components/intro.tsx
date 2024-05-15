@@ -5,17 +5,23 @@ import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 import Link from "next/link";
 import Image from 'next/image';
+import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 // Import Icons
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
+  const { ref } = useSectionInView("Home", 0.2);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
 
   return (
     <section
-    id="home"
-    className="px-20"
+        ref={ref}
+        id="home"
+        className="px-20 sm:mb-0 scroll-mt-[50rem]"
     >
         <div className="grid grid-cols-1 sm:grid-cols-12">
             <motion.div
@@ -26,9 +32,9 @@ export default function Intro() {
                 >
                 <h1 className="mb-4 text-4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold">
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-red-300 to-indigo-500 dark:from-blue-200 dark:via-red-200 dark:to-indigo-300">
-                        I&apos;m{" "}
+                       Hello I&apos;m,{" "}
                     </span>
-                    
+                    <br/>
                     <TypeAnimation
                         sequence={[
                             "Ricardo I. Hernandez",
@@ -54,6 +60,10 @@ export default function Intro() {
                     <Link
                         href="/#contact"
                         className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                        onClick={() => {
+                            setActiveSection("Contact");
+                            setTimeOfLastClick(Date.now());
+                        }}
                     >
                         Contact Me
                     </Link>
