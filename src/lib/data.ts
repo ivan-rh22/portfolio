@@ -73,9 +73,10 @@ export const links = [
     "Python",
     "Dart",
     "C",
-    "Java",
     "C++",
     "Ruby",
+    "Swift",
+    "Julia",
     "Django",
     "Framer Motion",
     "Git",
@@ -109,7 +110,7 @@ export const experiencesData = [
     date: "Summer 2023",
   },
   {
-    title: "Graduate from University of Texas Rio Grande Valley",
+    title: "Graduated from University of Texas Rio Grande Valley",
     location: "Edinburg, TX",
     description:
       "I graduated with a Bachelor of Science in Computer Science. I learned about algorithms, data structures, and software engineering. I also learned about web development, mobile development, and cloud computing.",
