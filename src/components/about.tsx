@@ -40,7 +40,7 @@ export default function About() {
             soccer, cycling, and working on my truck. I also enjoy{" "}
             <span className="font-medium">learning new things</span>. I am currently
             learning about{" "}
-            <span className="font-medium">auto repair and restoration</span>. I'm also
+            <span className="font-medium">auto repair and restoration</span>. I&apos;m also
             learning how to play the guitar.
         </p>
     </motion.section>
