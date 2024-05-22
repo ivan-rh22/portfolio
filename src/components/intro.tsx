@@ -43,11 +43,12 @@ export default function Intro() {
                             "a Web Developer",
                             1000,
                             "a Mobile Developer",
-                            1000
+                            1000,
+                            "Ricardo I. Hernandez"
                         ]}
                         wrapper="span"
-                        speed={50}
-                        repeat={Infinity}
+                        speed={50}  
+                        cursor={false}                                        
                     />
                 </h1>
                 <p className="text-base sm:text-lg mb-6 lg:text-xl">
