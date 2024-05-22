@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
@@ -32,6 +33,7 @@ export default function RootLayout({
             {children}
             <Footer />
             <Toaster position="top-right"/>
+            <Analytics />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
       </body>
